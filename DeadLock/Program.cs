@@ -1,5 +1,28 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Parallel.Invoke(Thread1, Thread2);
+
+using ReferenceCounting;
+
+KeyedLock<string> @lock = new();
+Parallel.Invoke(
+    () =>
+        Parallel.Invoke(Thread1, Thread2),
+    () =>
+        Parallel.Invoke(() => UsingKeyedLock("first", @lock, "first", "second"),
+            () => UsingKeyedLock("second", @lock, "second", "first"))
+);
+
+void UsingKeyedLock(string threadName, KeyedLock<string> keyedLock, string firstKey, string secondKey)
+{
+    using (keyedLock.Lock(firstKey))
+    {
+        Console.WriteLine($"thread {threadName} got {firstKey} lock");
+        Thread.Sleep(1000);
+        using (keyedLock.Lock(secondKey))
+        {
+            Console.WriteLine($"thread {threadName} got both locks");
+        }
+    }
+}
 
 void Thread1()
 {

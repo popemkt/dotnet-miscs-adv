@@ -8,4 +8,8 @@
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ReferenceCounting\ReferenceCounting.csproj" />
+    </ItemGroup>
+
 </Project>
