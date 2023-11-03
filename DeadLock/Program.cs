@@ -4,8 +4,10 @@ using ReferenceCounting;
 
 KeyedLock<string> @lock = new();
 Parallel.Invoke(
+    //Using normal locking mechanism
     () =>
         Parallel.Invoke(Thread1, Thread2),
+    //Testing out keyedLock Implementation
     () =>
         Parallel.Invoke(() => UsingKeyedLock("first", @lock, "first", "second"),
             () => UsingKeyedLock("second", @lock, "second", "first"))
