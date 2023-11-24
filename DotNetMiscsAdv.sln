@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceCounting", "Refere
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PInvoke", "PInvoke\PInvoke.csproj", "{299A4EB5-EDB2-47CF-BA27-51275C4CC011}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TPL", "TPL", "{8810D3DC-49C3-4257-BC9A-57C973D2DAFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task.Yield", "TPL\Task.Yield\Task.Yield.csproj", "{AA7A14DC-A657-434B-B402-F261DF71AC8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,12 @@ Global
 		{299A4EB5-EDB2-47CF-BA27-51275C4CC011}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{299A4EB5-EDB2-47CF-BA27-51275C4CC011}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{299A4EB5-EDB2-47CF-BA27-51275C4CC011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7A14DC-A657-434B-B402-F261DF71AC8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7A14DC-A657-434B-B402-F261DF71AC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7A14DC-A657-434B-B402-F261DF71AC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7A14DC-A657-434B-B402-F261DF71AC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA7A14DC-A657-434B-B402-F261DF71AC8B} = {8810D3DC-49C3-4257-BC9A-57C973D2DAFB}
 	EndGlobalSection
 EndGlobal
