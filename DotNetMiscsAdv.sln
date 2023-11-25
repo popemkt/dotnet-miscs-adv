@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TPL", "TPL", "{8810D3DC-49C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task.Yield", "TPL\Task.Yield\Task.Yield.csproj", "{AA7A14DC-A657-434B-B402-F261DF71AC8B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Performance", "Performance", "{AA2DE0F2-9587-48C7-9F2E-214EA0357837}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchValues", "Performance\SearchValues\SearchValues.csproj", "{EA0C834E-F55E-4D2E-B319-4BE36668CFF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +36,13 @@ Global
 		{AA7A14DC-A657-434B-B402-F261DF71AC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA7A14DC-A657-434B-B402-F261DF71AC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA7A14DC-A657-434B-B402-F261DF71AC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0C834E-F55E-4D2E-B319-4BE36668CFF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0C834E-F55E-4D2E-B319-4BE36668CFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0C834E-F55E-4D2E-B319-4BE36668CFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0C834E-F55E-4D2E-B319-4BE36668CFF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AA7A14DC-A657-434B-B402-F261DF71AC8B} = {8810D3DC-49C3-4257-BC9A-57C973D2DAFB}
+		{EA0C834E-F55E-4D2E-B319-4BE36668CFF9} = {AA2DE0F2-9587-48C7-9F2E-214EA0357837}
 	EndGlobalSection
 EndGlobal
